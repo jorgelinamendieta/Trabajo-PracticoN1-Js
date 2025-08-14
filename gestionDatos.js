@@ -60,15 +60,8 @@ function imprimirLongitud(array) {
  /*2
 Acceder e imprimir por consola el nombre del segundo 
 y cuarto elemento del array utilizando su índice. */ 
-
-
-
-
-
-
-
-
-
+console.log("Segundo producto:", productos[1].nombre);
+console.log("Cuarto producto:", productos[3].nombre);
 
 
 
@@ -88,16 +81,10 @@ function recorrerArray(array) {
 
 //2 Recorre el array productos utilizando el método forEach() e imprimir la misma información que en el punto anterior, pero agregando una frase descriptiva (ej. "Producto: [nombre], Precio: [precio]").
 
-
-
-
-
-
-
-
-
-
-
+console.log("\n- forEach():");
+productos.forEach(p => {
+    console.log(`Producto: ${p.nombre}, Precio: $${p.precio}`);
+});
 
 
 
@@ -174,3 +161,5 @@ eliminarUltimoElemento(productos);
 
 
 //8. Crear un nuevo array llamado productosOrdenados que contenga los productos ordenados por precio en orden decreciente. (investigar método sort()).
+let productosOrdenados = [...productos].sort((a, b) => b.precio - a.precio);
+console.log("\nProductos ordenados por precio (desc):", productosOrdenados);
