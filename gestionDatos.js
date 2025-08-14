@@ -156,13 +156,34 @@ eliminarUltimoElemento(productos);
 
 
 
+function filtrarProductosConStock(array) {
+    console.log('-----------------------------------------------');
+    console.log('Filtrar productos con stock mayor a 0:');
+    
+    let productosConStock = array.filter(producto => producto.stock > 0);
+    
+    console.log('Productos con stock disponible:', productosConStock);
+    return productosConStock;
+}
+
+filtrarProductosConStock(productos);
 
 
 
 //6. Crear un nuevo array llamado nombresProductos que contenga solo los nombres de todos los productos en el inventario utilizando map().
 
 
+function mapearNombresProductos(array) {
+    console.log('-----------------------------------------------');
+    console.log('Mapear nombres de productos:');
+    
+    let nombresProductos = array.map(producto => producto.nombre);
+    
+    console.log('Nombres de todos los productos:', nombresProductos);
+    return nombresProductos;
+}
 
+mapearNombresProductos(productos);
 
 
 
