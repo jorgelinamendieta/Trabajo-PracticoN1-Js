@@ -19,7 +19,7 @@ Editor de código: Visual Studio Code, Sublime Text, etc.
 
 
 📅 Fecha de Entrega
-[19/08/2025]
+[15/08/2025]
 
 📜 Consideraciones
 Originalidad: Soluciones propias (no copiar otros grupos)
