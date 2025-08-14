@@ -61,14 +61,13 @@ function imprimirLongitud(array) {
 Acceder e imprimir por consola el nombre del segundo 
 y cuarto elemento del array utilizando su índice. */ 
 
-
-
-
-
-
-
-
-
+function accederPorIndice(array) {
+    console.log('-----------------------------------------------');
+    console.log('Acceder a elementos por su índice:');
+    console.log('El nombre del segundo producto es:', array[1].nombre);
+    console.log('El nombre del cuarto producto es:', array[3].nombre);
+}
+accederPorIndice(productos);
 
 
 
@@ -206,9 +205,18 @@ mapearNombresProductos(productos);
 
 //7.Encontrar y guardar en una variable el primer producto en productos que tenga un id específico (ej. id:3) utilizando find(). Si no lo encuentra, indicar que no existe.
 
-
-
-
+function encontrarProductoPorId(array, idBuscado) {
+    console.log('-----------------------------------------------');
+    console.log(`Encontrar producto con id: ${idBuscado}:`);
+    let productoEncontrado = array.find(producto => producto.id === idBuscado);
+    
+    if (productoEncontrado) {
+        console.log('Se encontró el producto:', productoEncontrado);
+    } else {
+        console.log(`No se encontró ningún producto con el id: ${idBuscado}`);
+    }
+}
+encontrarProductoPorId(productos, 3);
 
 
 //8. Crear un nuevo array llamado productosOrdenados que contenga los productos ordenados por precio en orden decreciente. (investigar método sort()).
