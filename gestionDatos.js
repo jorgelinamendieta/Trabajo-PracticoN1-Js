@@ -162,10 +162,16 @@ agregarElementoInicio(productos);
 
 
 //4. Elimina el primer elemento del array productos utilizando shift().
+function eliminarPrimerElemento(array) {
+    console.log('-----------------------------------------------');
+    console.log('Eliminar el primer producto del array productos:')
+    console.log('el array actual es:', array)
 
+    array.shift();
 
-
-
+    console.log('Se elimino el primer producto, el array actualizado es:', array)
+}
+eliminarPrimerElemento(productos);
 
 
 // 5. Crear un nuevo array llamado productosConStock que contenga solo los elementos del array productos donde el stock sea mayor que 0 utilizando filter().
@@ -219,4 +225,16 @@ function encontrarProductoPorId(array, idBuscado) {
 encontrarProductoPorId(productos, 3);
 
 
-//8. Crear un nuevo array llamado productosOrdenados que contenga los productos ordenados por precio en orden decreciente. (investigar método sort()).
+//8. Crear un nuevo array llamado productosOrdenados que contenga los productos ordenados por precio en orden decreciente. (investigar método sort())
+
+function ordenarProductosPorPrecio(array) {
+    console.log('-----------------------------------------------');
+    console.log('Ordenar productos por precio en orden decreciente:');
+    
+    let productosOrdenados = array.sort((a, b) => b.precio - a.precio);
+    
+    console.log('Productos ordenados por precio (decreciente):', productosOrdenados);
+    return productosOrdenados;
+}
+ordenarProductosPorPrecio(productos);
+
