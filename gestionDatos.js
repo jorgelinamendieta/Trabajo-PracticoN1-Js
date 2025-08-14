@@ -90,8 +90,16 @@ function recorrerArray(array) {
 
 
 
+function recorrerArray1(array) {
+    console.log('+++++++++++++++++++++++++++++++++++++++++++++++');
+    console.log('Recorrer el array de productos con forEach:')
+    productos.forEach(producto => {
+    console.log(`El nombre del producto es: ${producto.nombre} y el precio es: $${producto.precio}`);
 
-
+});
+}
+ 
+ recorrerArray1(productos);
 
 
 
@@ -140,6 +148,15 @@ eliminarUltimoElemento(productos);
 
 //3.Agregar un nuevo elemento al inicio del array productos utilizando unshift().
 
+function agregarElementoInicio(array){
+    console.log('+++++++++++++++++++++++++++++++++++++++++++++++');
+    console.log('Agrega un producto al inicio del array productos:')
+    console.log('el array actual es:', array)
+    array.unshift({ id: 8, nombre: "bicicleta", precio: 4500, stock: 6 });
+    console.log('Se agrego un nuevo producto, el array actualizado es:', array);
+
+}
+agregarElementoInicio(productos);
 
 
 
