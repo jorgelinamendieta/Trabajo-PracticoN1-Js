@@ -46,9 +46,7 @@ mostrarProductos(productos);
 
 //2) Operaciones Básicas y Acceso:
 
-//1.Imprimir la longitud total del array productos
-
-
+//1
 function imprimirLongitud(array) {
     console.log('-----------------------------------------------');
     console.log('Imprimir Longitud total del array:')
@@ -57,10 +55,7 @@ function imprimirLongitud(array) {
 
  imprimirLongitud(productos)
 
- /*2
-Acceder e imprimir por consola el nombre del segundo 
-y cuarto elemento del array utilizando su índice. */ 
-
+ //2
 function accederPorIndice(array) {
     console.log('-----------------------------------------------');
     console.log('Acceder a elementos por su índice:');
@@ -74,8 +69,7 @@ accederPorIndice(productos);
 
  // 3) Recorrido del Array:
 
-//1Recorrer el array productos utilizando un bucle for...of e imprimir el nombre y el precio de cada elemento.
-
+//1
 function recorrerArray(array) {
     console.log('-----------------------------------------------');
     console.log('Recorrer el array de productos con for of:')
@@ -85,9 +79,7 @@ function recorrerArray(array) {
 }
  recorrerArray(productos)
 
-//2 Recorre el array productos utilizando el método forEach() e imprimir la misma información que en el punto anterior, pero agregando una frase descriptiva (ej. "Producto: [nombre], Precio: [precio]").
-
-
+//2
 
 function recorrerArray1(array) {
     console.log('+++++++++++++++++++++++++++++++++++++++++++++++');
@@ -101,18 +93,8 @@ function recorrerArray1(array) {
  recorrerArray1(productos);
 
 
-
-
-
-
-
-
-
-
-    /*4) Manipulación de Arrays:
-
-1. Agregar dos elementos al final del array productos utilizando push().*/
-
+    //4) Manipulación de Arrays:
+//1
 function agregarElementoFinal(array) {
     console.log('-----------------------------------------------');
     console.log('Agregar dos elementos al final del array de productos:')
@@ -129,7 +111,7 @@ agregarElementoFinal(productos)
 
 
 
-//2.Eliminar el último elemento del array productos utilizando pop().
+//2
 
 function eliminarUltimoElemento(array) {
     console.log('-----------------------------------------------');
@@ -145,8 +127,7 @@ eliminarUltimoElemento(productos);
 
 
 
-//3.Agregar un nuevo elemento al inicio del array productos utilizando unshift().
-
+//3
 function agregarElementoInicio(array){
     console.log('+++++++++++++++++++++++++++++++++++++++++++++++');
     console.log('Agrega un producto al inicio del array productos:')
@@ -161,7 +142,7 @@ agregarElementoInicio(productos);
 
 
 
-//4. Elimina el primer elemento del array productos utilizando shift().
+//4
 function eliminarPrimerElemento(array) {
     console.log('-----------------------------------------------');
     console.log('Eliminar el primer producto del array productos:')
@@ -174,10 +155,7 @@ function eliminarPrimerElemento(array) {
 eliminarPrimerElemento(productos);
 
 
-// 5. Crear un nuevo array llamado productosConStock que contenga solo los elementos del array productos donde el stock sea mayor que 0 utilizando filter().
-
-
-
+//5
 function filtrarProductosConStock(array) {
     console.log('-----------------------------------------------');
     console.log('Filtrar productos con stock mayor a 0:');
@@ -192,9 +170,7 @@ filtrarProductosConStock(productos);
 
 
 
-//6. Crear un nuevo array llamado nombresProductos que contenga solo los nombres de todos los productos en el inventario utilizando map().
-
-
+//6.
 function mapearNombresProductos(array) {
     console.log('-----------------------------------------------');
     console.log('Mapear nombres de productos:');
@@ -209,8 +185,7 @@ mapearNombresProductos(productos);
 
 
 
-//7.Encontrar y guardar en una variable el primer producto en productos que tenga un id específico (ej. id:3) utilizando find(). Si no lo encuentra, indicar que no existe.
-
+//7.
 function encontrarProductoPorId(array, idBuscado) {
     console.log('-----------------------------------------------');
     console.log(`Encontrar producto con id: ${idBuscado}:`);
@@ -225,8 +200,7 @@ function encontrarProductoPorId(array, idBuscado) {
 encontrarProductoPorId(productos, 3);
 
 
-//8. Crear un nuevo array llamado productosOrdenados que contenga los productos ordenados por precio en orden decreciente. (investigar método sort())
-
+//8
 function ordenarProductosPorPrecio(array) {
     console.log('-----------------------------------------------');
     console.log('Ordenar productos por precio en orden decreciente:');
